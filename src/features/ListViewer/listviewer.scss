@@ -1,0 +1,89 @@
+@import "scss/colors";
+
+$table-color: $info;
+
+.page_container {
+    .ant-btn .anticon {
+        display: inline-flex;
+    }
+
+    .ant-table {
+        border-radius: 10px 10px 0 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+        background-color: $white;
+    }
+
+    .ant-table table {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .ant-table-container table>thead>tr:first-child th:first-child {
+        border-top-left-radius: 10px !important;
+    }
+
+    .ant-table-container table>thead>tr:first-child th:last-child {
+        border-top-right-radius: 10px !important;
+    }
+
+    .ant-table-thead>tr>th {
+        background-color: $table-color !important;
+        color: $white
+    }
+
+    .advance-text {
+        color: $gray-800;
+        cursor: pointer;
+
+        &:hover {
+            color: $table-color;
+        }
+    }
+
+    .ant-collapse {
+        border: none;
+        border-radius: 10px;
+        background-color: $table-color;
+
+        &>.ant-collapse-item>.ant-collapse-header .ant-collapse-header-text {
+            color: $white;
+        }
+    }
+
+    .listviewer-header {
+        background-color: $white;
+        padding: 12px 12px 4px 4px;
+        border-radius: 10px;
+        box-shadow: $elevations-6;
+
+        .search-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .search-collapse {
+            transition: all 0.3s;
+            overflow: hidden;
+
+            .ant-input-group {
+                .ant-select-selector {
+                    border-radius: 5px 0 0 5px !important;
+                }
+
+                .ant-input {
+                    border-radius: 0 5px 5px 0 !important;
+                    width: calc(100% - 100px) !important;
+                }
+            }
+        }
+
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+            border-radius: 5px;
+        }
+    }
+
+
+
+}

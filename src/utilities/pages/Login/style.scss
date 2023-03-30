@@ -1,0 +1,126 @@
+@import 'scss/colors';
+
+.background-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cacacab9;
+  padding: 30px;
+  .my-container {
+    padding: 0;
+    display: flex;
+    height: 650px;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: $elevations-24;
+    // @media screen and (max-width:1200px) {
+    //     flex-wrap: wrap;
+    // }
+    // @media screen and (max-width:768px) {
+    //     flex-wrap: wrap;
+    //     overflow:visible
+    // }
+    @media screen and (max-width: 480px) {
+      height: 100%;
+      border-radius: 0;
+    }
+    .background-login {
+      // background: linear-gradient(to bottom, #0ccaff, #09a0ca);
+      // background-image: url("assets/icons/ai-bg.png");
+      width: 800px;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 1200px) {
+        width: 600px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 380px;
+      }
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+      .card {
+        max-width: 383px;
+        background-color: rgba(30, 143, 255, 0);
+        color: white;
+        border: none;
+        @media screen and (max-width: 768px) {
+          max-width: 300px;
+        }
+        .logo-row {
+          @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+          }
+          img {
+            width: 400px;
+            @media screen and (max-width: 1024px) {
+              width: 400px;
+            }
+            @media screen and (max-width: 768px) {
+              width: 200px;
+            }
+          }
+        }
+
+        .content {
+          font-size: 16px;
+          text-indent: 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .container-login {
+      width: 400px;
+      height: 100%;
+      margin: 0;
+      // @media screen and (max-width:1200px) {
+      //     width: 100%;
+      //     height: fit-content;
+      // }
+      // @media screen and (max-width:768px) {
+      //     width: 100%;
+      //     height: fit-content;
+      // }
+      @media screen and (max-width: 480px) {
+        height: 100%;
+      }
+      .ant-card {
+        height: 100%;
+        align-items: center;
+        display: flex;
+
+        .login-btn {
+          box-shadow: 0px 2px 7px $gray-400;
+          background: linear-gradient(to bottom, #0ccaff, #09a0ca);
+          border: none;
+          &:hover {
+            background: linear-gradient(to bottom, #0ba5cf, #087fa0);
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+.jitsLogo {
+  max-width: 40%;
+}
+
+.title {
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+  font-size: 30px;
+  // margin: 30px 0 10px 10px;
+  width: 100%;
+  text-align: center;
+}

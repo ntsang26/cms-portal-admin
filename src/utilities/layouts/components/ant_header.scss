@@ -1,0 +1,112 @@
+@import 'scss/colors';
+.box-notification {
+  position: relative;
+  height: 400px;
+  width: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.break-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+#components-layout-demo-fixed .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.ant-layout-header {
+  padding: 0 1em !important;
+  padding-left: 35px !important;
+  background: white !important;
+  // background: rgb(220, 241, 244);
+  // background: linear-gradient(90deg, rgba(220, 241, 244, 1) 0%, rgba(23, 162, 184, 1) 100%);
+  z-index: 99 !important;
+}
+.ant-layout-footer {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100vw;
+  z-index: 99 !important;
+}
+.ant-layout-content {
+  margin-top: 70px;
+  min-height: calc(90vh);
+}
+// .ant-layout-sider-zero-width-trigger {
+//   top: 2px !important;
+//   z-index: 999 !important;
+//   position: fixed !important;
+//   right: unset !important;
+//   font-size: 35px !important;
+//   color: #137d8d !important;
+//   background: rgb(220, 241, 244) !important;
+//   font-weight: 900;
+// }
+.default-layout {
+  /* padding-bottom: 4em; */
+}
+
+.site-layout-background {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+/* .noti-success {
+  background-color: #52c41a;
+  color: white !important;
+}
+
+.noti-error {
+  background-color: #b96d2a;
+  color: white;
+}
+
+.noti-warning {
+  background-color: #dd9f68;
+  color: white;
+}
+
+.noti-info {
+} */
+.antd-tb-idx {
+  width: 100%;
+  text-align: center;
+}
+
+/* for loading custom */
+.spin-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  min-height: 80vh;
+}
+
+/* custom bg-color disabled input */
+input:disabled,
+.ant-input[disabled] {
+  background-color: rgb(241, 241, 241) !important;
+  color: #000000;
+}
+.ant-btn[disabled],
+.ant-btn[disabled]:hover,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:active {
+  opacity: 0.4 !important;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.layout-header {
+  display: flex;
+}

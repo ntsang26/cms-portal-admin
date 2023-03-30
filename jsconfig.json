@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "./src"
+  },
+  "include": ["src/**/*", "public/firebase-message-sw.js"],
+  "exclude": ["node_modules/"]
+}

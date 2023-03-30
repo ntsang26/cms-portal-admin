@@ -1,0 +1,71 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "AI Portal",
+    "description": "",
+    "contact": {
+      "email": ""
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:1339"
+    }
+  ],
+
+  "paths": {
+    "/oapi/request/nric": {
+      "post": {
+        "tags": ["Request nric"],
+        "summary": "request nric",
+        "description": "request nric return data on nric",
+        "requestBody": {
+          "description": "Update an existent user in the store",
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/nric" }
+            }
+          }
+        },
+        "responses": {
+          "0": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "bad input parameter"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "nric": {
+        "required": ["session", "inputValues"],
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "example": "sessionCanNotHack"
+          },
+          "inputValues": {
+            "type": "object",
+            "properties": {
+              "urlImage": {
+                "type": "string",
+                "example": "home/jits/code-moi-ne/jits-ai-backend/assets/images/000c649f-ce4f-4002-90d4-2260d24ceb75.jpg"
+              }
+            },
+            "xml": { "name": "inputValues" }
+          }
+        },
+        "xml": { "name": "nric" }
+      }
+    }
+  }
+}

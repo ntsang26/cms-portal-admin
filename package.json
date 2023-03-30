@@ -1,0 +1,86 @@
+{
+  "name": "jits-ai-portal",
+  "version": "1.0.0",
+  "description": "jits-ai-portal",
+  "author": {
+    "name": "jits-ai-portal",
+    "url": ""
+  },
+  "contributors": [
+    {
+      "name": "Jits",
+      "url": "https://github.com/orgs/coreui/people"
+    }
+  ],
+  "homepage": ".",
+  "copyright": "Copyright 2017-2020 creativeLabs Łukasz Holeczek",
+  "license": "https://coreui.io/pro/license/",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@reduxjs/toolkit": "^1.6.0",
+    "antd": "^4.21.0",
+    "antd-img-crop": "^4.2.8",
+    "bootstrap-icons": "^1.9.1",
+    "device-detector-js": "^2.2.10",
+    "grapesjs": "^0.20.1",
+    "grapesjs-parser-postcss": "^1.0.1",
+    "i18next": "^20.3.2",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-cropper": "^2.1.8",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-toastify": "^7.0.4",
+    "sweetalert2": "^11.6.4"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "mutationobserver-shim": "^0.3.7",
+    "prettier": "^2.3.2",
+    "react-scripts": "^4.0.3"
+  },
+  "scripts": {
+    "start": "set PORT=3006 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject",
+    "zip": "git archive -o coreui-pro-react-admin-template-starter-v$npm_package_version.zip -9 HEAD",
+    "lint": "eslint --ext .jsx --ext .js src/",
+    "lint:fix": "eslint --fix --ext jsx --fix --ext .js src/"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  },
+  "engines": {
+    "node": ">=8.16",
+    "npm": ">=6"
+  }
+}

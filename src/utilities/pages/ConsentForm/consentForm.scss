@@ -1,0 +1,38 @@
+@import 'scss/colors';
+span,
+div {
+  font-size: 24px !important;
+}
+.cs-header {
+  background-color: white;
+  height: 3em;
+  div {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    height: 100%;
+  }
+  .cs-email {
+    float: right;
+    font-size: 18px !important;
+  }
+  .cs-brand {
+    float: left;
+  }
+}
+.cs-domain {
+  color: $gray-700;
+}
+.row-cf {
+  border-bottom: 1px solid $gray-200;
+  margin-bottom: 1em;
+}
+.cs-btn {
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+// .cs-btn .btn {
+//   color: white !important;
+// }
